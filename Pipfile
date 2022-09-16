@@ -18,6 +18,6 @@ pytest-cov = "*"
 python_version = "3.9"
 
 [scripts]
-dev = "flask run"
+dev = "bash -c \"export FLASK_DEBUG=true && flask run\""
 test = "pytest ."
 coverage = "pytest --cov-report term-missing --cov=."
