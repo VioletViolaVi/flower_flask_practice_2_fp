@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask-cors = "*"
+werkzeug = "*"
+flask = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+dev = "flask run"
+test = "pytest ."
+coverage = "pytest --cov-report term-missing --cov=."
