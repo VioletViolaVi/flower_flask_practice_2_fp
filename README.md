@@ -31,5 +31,6 @@ A site for all your petal-related needs.
 
 - `python app.py` **_(or whatever the main .py file is called)_**: results in Debug mode: on
 - `python -m flask run`: results in Debug mode: off
+  - unless you put `dev = "bash -c \"export FLASK_DEBUG=true && flask run\""` in a [Pipfile](./Pipfile) under **_scripts_**
 - `python -m pipenv run dev`: results in Debug mode: off
   - unless you put `dev = "bash -c \"export FLASK_DEBUG=true && flask run\""` in a [Pipfile](./Pipfile) under **_scripts_**
