@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -20,5 +20,18 @@ def flowers():
     return render_template("flowers.html", page_title="My Flowers List", flowers=flowers)
 
 
-if __name__ == "__main__":
+@app.route("/flowers/new", methods=["GET", "POST"])
+def new_flower():
+    if request.method == "GET":
+        return "This route works for POST requests"
+    else:
+        data = request.get_json()
+        if data["colour"] != "invisible":
+            return "This is a real flower", 201
+        else:
+            return "Nah...", 400
+
+
+# ignored in testing
+if __name__ == "__main__":  # pragma: no cover
     app.run(debug=True)
