@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename='./assets/images/flower.ico') }}"
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='./assets/images/flower.ico') }}"
     />
     <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='./assets/styles/base.css') }}"
+    rel="stylesheet"
+    href="{{ url_for('static', filename='./assets/styles/base.css') }}"
     />
+    {% block scriptHeaders %}{% endblock scriptHeaders %}
     <title>{% block title %}{% endblock title %}</title>
   </head>
   <body>
