@@ -30,4 +30,5 @@ A site for all your petal-related needs.
 - `python -m pipenv install --dev pytest pytest-cov`: installing pytest & pytest-cov with **_`--dev`_**
 - `python -m pipenv install pytest pytest-cov`: installing pytest & pytest-cov **_NO --DEV!!!_**
 - `python -m coverage run -m pytest`: running coverage
-- `python -m pipenv run coverage`: generate a coverage report **_(must have correct content in respective section of the Pipfile\*... ...\*see [Pipfile](./Pipfile))_**
+- `python -m pipenv run coverage`: generate a coverage report 
+  - **_(must have correct content in respective section of the Pipfile\*... ...\*see [Pipfile](./Pipfile))_**
